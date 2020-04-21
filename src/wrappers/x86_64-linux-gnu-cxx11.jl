@@ -3,7 +3,6 @@ export libze_intel_gpu, ocloc, libigdrcl
 
 using gmmlib_jll
 using libigc_jll
-using oneAPI_Level_Zero_jll
 ## Global variables
 PATH = ""
 LIBPATH = ""
@@ -79,8 +78,8 @@ function __init__()
     append!(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
     # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
     # then append them to our own.
-    foreach(p -> append!(PATH_list, p), (gmmlib_jll.PATH_list, libigc_jll.PATH_list, oneAPI_Level_Zero_jll.PATH_list,))
-    foreach(p -> append!(LIBPATH_list, p), (gmmlib_jll.LIBPATH_list, libigc_jll.LIBPATH_list, oneAPI_Level_Zero_jll.LIBPATH_list,))
+    foreach(p -> append!(PATH_list, p), (gmmlib_jll.PATH_list, libigc_jll.PATH_list,))
+    foreach(p -> append!(LIBPATH_list, p), (gmmlib_jll.LIBPATH_list, libigc_jll.LIBPATH_list,))
 
     global libze_intel_gpu_path = normpath(joinpath(artifact_dir, libze_intel_gpu_splitpath...))
 
