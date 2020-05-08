@@ -1,6 +1,6 @@
 name = "NEO_jll"
 uuid = "700fe977-ac61-5f37-bbc8-c6c4b2b6a9fd"
-version = "20.15.16524+0"
+version = "20.18.16699+0"
 
 [deps]
 gmmlib_jll = "09858cae-167c-5acb-9302-fddc6874d481"
@@ -11,4 +11,4 @@ Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 [compat]
 julia = "1.0"
 gmmlib_jll = "=20.1.1"
-libigc_jll = "=1.0.3771"
+libigc_jll = "=1.0.3899"
