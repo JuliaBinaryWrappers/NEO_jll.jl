@@ -3,6 +3,7 @@ export libigdrcl, libze_intel_gpu, ocloc
 
 using gmmlib_jll
 using libigc_jll
+using oneAPI_Level_Zero_Headers_jll
 ## Global variables
 PATH = ""
 LIBPATH = ""
@@ -24,7 +25,7 @@ const libigdrcl = "libigdrcl.so"
 
 
 # Relative path to `libze_intel_gpu`
-const libze_intel_gpu_splitpath = ["lib64", "libze_intel_gpu.so.0.8"]
+const libze_intel_gpu_splitpath = ["lib64", "libze_intel_gpu.so.1"]
 
 # This will be filled out by __init__() for all products, as it must be done at runtime
 libze_intel_gpu_path = ""
@@ -34,7 +35,7 @@ libze_intel_gpu_path = ""
 libze_intel_gpu_handle = C_NULL
 
 # This must be `const` so that we can use it with `ccall()`
-const libze_intel_gpu = "libze_intel_gpu.so.0.8"
+const libze_intel_gpu = "libze_intel_gpu.so.1"
 
 
 # Relative path to `ocloc`
@@ -78,8 +79,8 @@ function __init__()
     global PATH_list, LIBPATH_list
     # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
     # then append them to our own.
-    foreach(p -> append!(PATH_list, p), (gmmlib_jll.PATH_list, libigc_jll.PATH_list,))
-    foreach(p -> append!(LIBPATH_list, p), (gmmlib_jll.LIBPATH_list, libigc_jll.LIBPATH_list,))
+    foreach(p -> append!(PATH_list, p), (gmmlib_jll.PATH_list, libigc_jll.PATH_list, oneAPI_Level_Zero_Headers_jll.PATH_list,))
+    foreach(p -> append!(LIBPATH_list, p), (gmmlib_jll.LIBPATH_list, libigc_jll.LIBPATH_list, oneAPI_Level_Zero_Headers_jll.LIBPATH_list,))
 
     global libigdrcl_path = normpath(joinpath(artifact_dir, libigdrcl_splitpath...))
 
