@@ -69,14 +69,18 @@ function ocloc(f::Function; adjust_PATH::Bool = true, adjust_LIBPATH::Bool = tru
 end
 
 
+# Inform that the wrapper is available for this platform
+wrapper_available = true
+
 """
 Open all libraries
 """
 function __init__()
-    global artifact_dir = abspath(artifact"NEO")
+    # This either calls `@artifact_str()`, or returns a constant string if we're overridden.
+    global artifact_dir = find_artifact_dir()
 
-    # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
+    # Initialize PATH and LIBPATH environment variable listings
     # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
     # then append them to our own.
     foreach(p -> append!(PATH_list, p), (gmmlib_jll.PATH_list, libigc_jll.PATH_list, oneAPI_Level_Zero_Headers_jll.PATH_list,))
@@ -86,14 +90,14 @@ function __init__()
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
-    global libigdrcl_handle = dlopen(libigdrcl_path)
+    global libigdrcl_handle = dlopen(libigdrcl_path, RTLD_LAZY | RTLD_DEEPBIND)
     push!(LIBPATH_list, dirname(libigdrcl_path))
 
     global libze_intel_gpu_path = normpath(joinpath(artifact_dir, libze_intel_gpu_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
-    global libze_intel_gpu_handle = dlopen(libze_intel_gpu_path)
+    global libze_intel_gpu_handle = dlopen(libze_intel_gpu_path, RTLD_LAZY | RTLD_DEEPBIND)
     push!(LIBPATH_list, dirname(libze_intel_gpu_path))
 
     global ocloc_path = normpath(joinpath(artifact_dir, ocloc_splitpath...))
@@ -107,4 +111,3 @@ function __init__()
 
     
 end  # __init__()
-
