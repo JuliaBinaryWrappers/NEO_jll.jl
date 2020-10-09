@@ -1,16 +1,19 @@
 name = "NEO_jll"
 uuid = "700fe977-ac61-5f37-bbc8-c6c4b2b6a9fd"
-version = "20.34.17727+1"
+version = "20.39.17972+0"
 
 [deps]
+JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
 gmmlib_jll = "09858cae-167c-5acb-9302-fddc6874d481"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 libigc_jll = "94295238-5935-5bd7-bb0f-b00942e9bdd5"
 oneAPI_Level_Zero_Headers_jll = "f4bc562b-d309-54f8-9efb-476e56f0410d"
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
 [compat]
+JLLWrappers = "1.1.0"
 julia = "1.0"
-gmmlib_jll = "=20.2.4"
-libigc_jll = "=1.0.4756"
+gmmlib_jll = "=20.2.5"
+libigc_jll = "=1.0.5064"
 oneAPI_Level_Zero_Headers_jll = "=1.0.0"
