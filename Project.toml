@@ -1,6 +1,6 @@
 name = "NEO_jll"
 uuid = "700fe977-ac61-5f37-bbc8-c6c4b2b6a9fd"
-version = "21.30.20482+0"
+version = "21.31.20514+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
@@ -15,5 +15,5 @@ Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 JLLWrappers = "1.2.0"
 julia = "1.0"
 gmmlib_jll = "=21.2.1"
-libigc_jll = "=1.0.7862"
+libigc_jll = "=1.0.8173"
 oneAPI_Level_Zero_Headers_jll = "~1.2"
