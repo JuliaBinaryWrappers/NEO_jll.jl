@@ -12,13 +12,13 @@ function __init__()
     JLLWrappers.@generate_init_header(gmmlib_jll, libigc_jll, oneAPI_Level_Zero_Headers_jll)
     JLLWrappers.@init_library_product(
         libigdrcl,
-        "lib64/intel-opencl/libigdrcl.so",
+        "lib/intel-opencl/libigdrcl.so",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libze_intel_gpu,
-        "lib64/libze_intel_gpu.so.1",
+        "lib/libze_intel_gpu.so.1",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
