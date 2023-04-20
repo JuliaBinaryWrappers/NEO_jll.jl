@@ -1,5 +1,30 @@
 [[NEO]]
 arch = "x86_64"
+cxxstring_abi = "cxx03"
+debug = "false"
+git-tree-sha1 = "a0814a3a288b540270d3ea720ab58ebfd4157884"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[NEO.download]]
+    sha256 = "e7b76e08c19d662c33f993a7c3dc65149ffd57f2d68bda1f1450280cc2d83cbc"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-cxx03-debug+false.tar.gz"
+[[NEO]]
+arch = "x86_64"
+cxxstring_abi = "cxx03"
+debug = "true"
+git-tree-sha1 = "bc769a879d932580ba4664e805c628f4eb333ad2"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[NEO.download]]
+    sha256 = "c96e84c45d52a5fa4ded588c4bf741f055031a02464e8b59d2ce034ea5603b19"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-cxx03-debug+true.tar.gz"
+[[NEO]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
 debug = "false"
 git-tree-sha1 = "8ec2588dc6394e29e9798f510445a729bec709a1"
 lazy = true
@@ -8,9 +33,10 @@ os = "linux"
 
     [[NEO.download]]
     sha256 = "45d0dc23a71898b02aac5e8e171c000ef3089641d9d3c03ac3fd87ca33e39762"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-debug+false.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-cxx11-debug+false.tar.gz"
 [[NEO]]
 arch = "x86_64"
+cxxstring_abi = "cxx11"
 debug = "true"
 git-tree-sha1 = "baf853de3e7865bdf46dc74616e1c87e893c4487"
 lazy = true
@@ -19,4 +45,4 @@ os = "linux"
 
     [[NEO.download]]
     sha256 = "029741ce7b8d16922169b67d935328df0d575a1614911816f8403b04092b6971"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-debug+true.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v22.53.25593+1/NEO.v22.53.25593.x86_64-linux-gnu-cxx11-debug+true.tar.gz"
