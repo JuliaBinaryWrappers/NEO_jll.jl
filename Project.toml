@@ -1,6 +1,6 @@
 name = "NEO_jll"
 uuid = "700fe977-ac61-5f37-bbc8-c6c4b2b6a9fd"
-version = "24.26.30049+0"
+version = "25.27.34303+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
@@ -13,12 +13,12 @@ TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
 [compat]
-JLLWrappers = "1.4.0"
+JLLWrappers = "1.7.0"
 julia = "1.6"
-gmmlib_jll = "=22.3.20"
-libigc_jll = "=1.0.17193"
-LazyArtifacts = "1"
-Libdl = "1"
-oneAPI_Level_Zero_Headers_jll = "=1.9.2"
-TOML = "1"
-Artifacts = "1"
+gmmlib_jll = "=22.8.1"
+libigc_jll = "=2.14.1"
+LazyArtifacts = "< 0.0.1, 1"
+Libdl = "< 0.0.1, 1"
+oneAPI_Level_Zero_Headers_jll = "=1.13"
+TOML = "< 0.0.1, 1"
+Artifacts = "< 0.0.1, 1"

@@ -18,7 +18,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libze_intel_gpu,
-        "lib/libze_intel_gpu.so.1",
+        "lib/libze_intel_gpu.so",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
