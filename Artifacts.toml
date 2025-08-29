@@ -2,47 +2,47 @@
 arch = "x86_64"
 cxxstring_abi = "cxx03"
 debug = "false"
-git-tree-sha1 = "0c541a7b5f8ea748fd31e66094dff0acbf9ed162"
+git-tree-sha1 = "bd77648c4b27e6b21b8ae87d2520f80010ac554a"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[NEO.download]]
-    sha256 = "994f77c499096ef45548ec82f0f49b55808a46a34365bd563a6a1fb84fb012e2"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.27.34303+1/NEO.v25.27.34303.x86_64-linux-gnu-cxx03-debug+false.tar.gz"
+    sha256 = "020890e9e47f48e5f506c774b32337be45966f7163b7a77d1f4a007436990e81"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.31.34666+0/NEO.v25.31.34666.x86_64-linux-gnu-cxx03-debug+false.tar.gz"
 [[NEO]]
 arch = "x86_64"
 cxxstring_abi = "cxx03"
 debug = "true"
-git-tree-sha1 = "ce96524aa1299ccc1c14c3b04b022535ee8f9ac5"
+git-tree-sha1 = "7da7807bf44b9191f6cb8ac3a46509852232f50b"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[NEO.download]]
-    sha256 = "8565323abb5a58de4b3afcb9c1645806885c97308f3d973748a9e2ab4f534773"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.27.34303+1/NEO.v25.27.34303.x86_64-linux-gnu-cxx03-debug+true.tar.gz"
+    sha256 = "94dc481f43db55f031f74e2e50bd20f7aa2cef56e62cc72524add261048b82ba"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.31.34666+0/NEO.v25.31.34666.x86_64-linux-gnu-cxx03-debug+true.tar.gz"
 [[NEO]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
 debug = "false"
-git-tree-sha1 = "27b62a599766cfba6658cae7b01dccd82e201b16"
+git-tree-sha1 = "ee5147f100b1491226c77606e7b22ed1d8cf5f88"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[NEO.download]]
-    sha256 = "0b51b7e755ea6c0ed64c6614495b7ad1b63be18eeb1dc1a19c7c2d47ff7276d7"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.27.34303+1/NEO.v25.27.34303.x86_64-linux-gnu-cxx11-debug+false.tar.gz"
+    sha256 = "2d9e8f05f07ac17e783bf5d21f316e9e4bc30bd692f428af253bd8ba33906c4a"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.31.34666+0/NEO.v25.31.34666.x86_64-linux-gnu-cxx11-debug+false.tar.gz"
 [[NEO]]
 arch = "x86_64"
 cxxstring_abi = "cxx11"
 debug = "true"
-git-tree-sha1 = "8cf410b47cfe3ad051c75605cbc70a92ae0ac47f"
+git-tree-sha1 = "4b7cb2cf7ff5953f1ae708bb41b83c3bbe9393ea"
 lazy = true
 libc = "glibc"
 os = "linux"
 
     [[NEO.download]]
-    sha256 = "abe6865c27786b26e659408eddc16e12bcc7f7d94ebde663e8d0ec7a62666e6c"
-    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.27.34303+1/NEO.v25.27.34303.x86_64-linux-gnu-cxx11-debug+true.tar.gz"
+    sha256 = "5bea09939bdb8220861851bf490a7391fc5bbee3c62fd47d816ee2f4b60979b8"
+    url = "https://github.com/JuliaBinaryWrappers/NEO_jll.jl/releases/download/NEO-v25.31.34666+0/NEO.v25.31.34666.x86_64-linux-gnu-cxx11-debug+true.tar.gz"
