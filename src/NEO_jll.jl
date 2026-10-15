@@ -2,7 +2,6 @@
 baremodule NEO_jll
 using Base
 using Base: UUID
-using LazyArtifacts
 Base.include(@__MODULE__, joinpath("..", ".pkg", "platform_augmentation.jl"))
 import JLLWrappers
 
