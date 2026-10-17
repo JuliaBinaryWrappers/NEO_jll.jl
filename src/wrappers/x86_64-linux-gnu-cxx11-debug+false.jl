@@ -5,11 +5,16 @@ using gmmlib_jll
 using libigc_jll
 using oneAPI_Level_Zero_Headers_jll
 JLLWrappers.@generate_wrapper_header("NEO")
+JLLWrappers.@declare_executable_product(ocloc)
 JLLWrappers.@declare_library_product(libigdrcl, "libigdrcl.so")
 JLLWrappers.@declare_library_product(libze_intel_gpu, "libze_intel_gpu.so.1")
-JLLWrappers.@declare_executable_product(ocloc)
 function __init__()
     JLLWrappers.@generate_init_header(gmmlib_jll, libigc_jll, oneAPI_Level_Zero_Headers_jll)
+    JLLWrappers.@init_executable_product(
+        ocloc,
+        "bin/ocloc",
+    )
+
     JLLWrappers.@init_library_product(
         libigdrcl,
         "lib/intel-opencl/libigdrcl.so",
@@ -20,11 +25,6 @@ function __init__()
         libze_intel_gpu,
         "lib/libze_intel_gpu.so.1",
         RTLD_LAZY | RTLD_DEEPBIND,
-    )
-
-    JLLWrappers.@init_executable_product(
-        ocloc,
-        "bin/ocloc",
     )
 
     JLLWrappers.@generate_init_footer()
